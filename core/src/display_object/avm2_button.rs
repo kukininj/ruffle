@@ -382,6 +382,14 @@ impl<'gc> Avm2Button<'gc> {
     pub fn set_avm2_class(self, mc: MutationContext<'gc, '_>, class: Avm2Object<'gc>) {
         self.0.write(mc).class = class;
     }
+
+    pub fn set_needs_frame_construction(
+        self,
+        mc: MutationContext<'gc, '_>,
+        needs_frame_construction: bool,
+    ) {
+        self.0.write(mc).needs_frame_construction = needs_frame_construction;
+    }
 }
 
 impl<'gc> TDisplayObject<'gc> for Avm2Button<'gc> {

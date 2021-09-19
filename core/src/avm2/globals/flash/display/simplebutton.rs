@@ -34,6 +34,7 @@ pub fn instance_init<'gc>(
             );
             this.init_display_object(activation.context.gc_context, new_do.into());
             new_do.set_object2(activation.context.gc_context, this);
+            new_do.set_needs_frame_construction(activation.context.gc_context, false);
 
             let up_state = args
                 .get(0)
