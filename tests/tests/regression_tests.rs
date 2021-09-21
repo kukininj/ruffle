@@ -680,6 +680,7 @@ swf_tests! {
     (as3_string_indexof_lastindexof, "avm2/string_indexof_lastindexof", 1),
     (as3_string_match, "avm2/string_match", 1),
     (as3_string_slice_substr_substring, "avm2/string_slice_substr_substring", 1),
+    (as3_simplebutton_constr_next_frames, "avm2/simplebutton_constr_next_frames", 6),
 }
 
 // TODO: These tests have some inaccuracies currently, so we use approx_eq to test that numeric values are close enough.
